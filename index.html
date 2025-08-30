@@ -1,0 +1,37 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Convite Misterioso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="prank-container">
+        <h1 id="message"></h1>
+        <button id="action-button"></button>
+    </div>
+
+    <div id="reveal-container" class="hidden">
+        <img id="reveal-image" src="funny-llama.png" alt="Lhama engraçada de óculos escuros">
+        <p id="reveal-text-1" class="final-text"></p>
+        <p id="reveal-text-2" class="final-text"></p>
+    </div>
+
+    <div id="dramatic-effect" class="hidden"></div>
+    <div id="glitch-overlay"></div>
+
+
+    <script type="importmap">
+    {
+      "imports": {
+        "canvas-confetti": "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.module.mjs"
+      }
+    }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
